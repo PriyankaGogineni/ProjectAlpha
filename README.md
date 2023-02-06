@@ -1,5 +1,5 @@
 # ProjectAlpha
-ProjectAlpha is designed to develop the product smart trash can.
-We call it as GREENCOUNT.
-The main aim of greencount is to collect the data of trash whether it is recyclable or not and send the data to the user.
-We use raspberry pi with camera and motion sensor, and cloud services. 
+ProjectAlpha is a team designed to develop a smart recycling bin.
+We have named this product GreenCount.
+The main aim of GreenCount is to collect information about what people are recycling and provide them with that data.
+The prototype will use a Raspberry Pi, camera, motion sensor and cloud services. 
