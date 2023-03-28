@@ -1,0 +1,17 @@
+C:\Users\haris\source\repos\trash data\trash data\bin\Debug\net6.0-windows\trash data.exe
+C:\Users\haris\source\repos\trash data\trash data\bin\Debug\net6.0-windows\trash data.deps.json
+C:\Users\haris\source\repos\trash data\trash data\bin\Debug\net6.0-windows\trash data.runtimeconfig.json
+C:\Users\haris\source\repos\trash data\trash data\bin\Debug\net6.0-windows\trash data.dll
+C:\Users\haris\source\repos\trash data\trash data\bin\Debug\net6.0-windows\trash data.pdb
+C:\Users\haris\source\repos\trash data\trash data\obj\Debug\net6.0-windows\trash data.csproj.AssemblyReference.cache
+C:\Users\haris\source\repos\trash data\trash data\obj\Debug\net6.0-windows\trash_data.Form1.resources
+C:\Users\haris\source\repos\trash data\trash data\obj\Debug\net6.0-windows\trash data.csproj.GenerateResource.cache
+C:\Users\haris\source\repos\trash data\trash data\obj\Debug\net6.0-windows\trash data.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\haris\source\repos\trash data\trash data\obj\Debug\net6.0-windows\trash data.AssemblyInfoInputs.cache
+C:\Users\haris\source\repos\trash data\trash data\obj\Debug\net6.0-windows\trash data.AssemblyInfo.cs
+C:\Users\haris\source\repos\trash data\trash data\obj\Debug\net6.0-windows\trash data.csproj.CoreCompileInputs.cache
+C:\Users\haris\source\repos\trash data\trash data\obj\Debug\net6.0-windows\trash data.dll
+C:\Users\haris\source\repos\trash data\trash data\obj\Debug\net6.0-windows\refint\trash data.dll
+C:\Users\haris\source\repos\trash data\trash data\obj\Debug\net6.0-windows\trash data.pdb
+C:\Users\haris\source\repos\trash data\trash data\obj\Debug\net6.0-windows\trash data.genruntimeconfig.cache
+C:\Users\haris\source\repos\trash data\trash data\obj\Debug\net6.0-windows\ref\trash data.dll
