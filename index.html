@@ -1,4 +1,58 @@
-{% for image in images %}
-    <img src="{{ image.image.url }}" alt="{{ image.title }}">
-    <p>{{ image.title }}</p>
-{% endfor %}
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Trash Parameters Dashboard</title>
+	<style>
+		body {
+			font-family: Arial, sans-serif;
+		}
+		h1 {
+			font-size: 32px;
+			margin: 40px 0 20px 0;
+		}
+		table {
+			border-collapse: collapse;
+			width: 50%;
+		}
+		th, td {
+			padding: 8px;
+			text-align: left;
+			border-bottom: 1px solid #ddd;
+		}
+		tr:hover {
+			background-color: #f5f5f5;
+		}
+		th {
+			background-color: #4CAF50;
+			color: white;
+		}
+	</style>
+</head>
+<body>
+	<h1>Trash Parameters Dashboard</h1>
+	<table>
+		<tr>
+			<th>Parameter</th>
+			<th>Count</th>
+		</tr>
+		<tr>
+			<td>Glass</td>
+			<td id="glassCount">-</td>
+		</tr>
+		<tr>
+			<td>Plastic</td>
+			<td id="plasticCount">-</td>
+		</tr>
+		<tr>
+			<td>Paper</td>
+			<td id="paperCount">-</td>
+		</tr>
+		<tr>
+			<td>Metal</td>
+			<td id="metalCount">-</td>
+		</tr>
+	</table>
+	<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+	<script src="script.js"></script>
+</body>
+</html>

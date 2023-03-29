@@ -1,0 +1,18 @@
+exports.handler = async function(event, context) {
+	const data = {
+		glass: 10,
+		plastic: 20,
+		paper: 30,
+		metal: 40
+	};
+	
+	const response = {
+		statusCode: 200,
+		headers: {
+			'Access-Control-Allow-Origin': '*'
+		},
+		body: JSON.stringify(data)
+	};
+	
+	return response;
+};
