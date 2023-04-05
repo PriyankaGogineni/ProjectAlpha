@@ -26,7 +26,7 @@ camera_config = camera.create_still_configuration(main={"size": (1920, 1080)}, l
 camera.configure(camera_config)
 
 #start live preview
-camera.start_preview(Preview.QTGL)
+#camera.start_preview(Preview.QTGL)
 
 #start camera
 camera.start()
@@ -48,33 +48,27 @@ model='arn:aws:rekognition:us-east-2:152196704760:project/GreenCount/version/Gre
 min_confidence=92
 
 
-#starts the custom model, some small changes made to source code
+#starts the custom model, fully integrated
 #Copyright 2020 Amazon.com, Inc. or its affiliates. All Rights Reserved.
 #PDX-License-Identifier: MIT-0 (For details, see https://github.com/awsdocs/amazon-rekognition-custom-labels-developer-guide/blob/master/LICENSE-SAMPLECODE.)
 def start_model(project_arn, model_arn, version_name, min_inference_units):
 
     try:
         # Start the model
-        print('Starting model: ' + model_arn)
-        response = client.start_project_version(ProjectVersionArn=model_arn, MinInferenceUnits=min_inference_units)
+        response = client.start_project_version(ProjectVersionArn = model_arn, MinInferenceUnits = min_inference_units)
         # Wait for the model to be in the running state
         project_version_running_waiter = client.get_waiter('project_version_running')
-        project_version_running_waiter.wait(ProjectArn=project_arn, VersionNames=[version_name])
+        project_version_running_waiter.wait(ProjectArn = project_arn, VersionNames = [version_name])
 
         #Get the running status
-        describe_response=client.describe_project_versions(ProjectArn=project_arn,
-            VersionNames=[version_name])
-        for model in describe_response['ProjectVersionDescriptions']:
-            print("Status: " + model['Status'])
-            print("Message: " + model['StatusMessage']) 
+        describe_response = client.describe_project_versions(ProjectArn=project_arn,
+            VersionNames = [version_name])
     except Exception as e:
         print(e)
-        
-    print('Done...')
     
 
 
-#get custom labels, this function will have some changes for final product
+#get custom labels, function fully integrated
 #Copyright 2020 Amazon.com, Inc. or its affiliates. All Rights Reserved.
 #PDX-License-Identifier: MIT-0 (For details, see https://github.com/awsdocs/amazon-rekognition-custom-labels-developer-guide/blob/master/LICENSE-SAMPLECODE.)
 def show_custom_labels(model,bucket,photo, min_confidence):
@@ -84,27 +78,19 @@ def show_custom_labels(model,bucket,photo, min_confidence):
         MinConfidence = min_confidence,
         ProjectVersionArn = model)
 
-    # For object detection use case, uncomment below code to display image.
-    # display_image(bucket,photo,response)
-
     return (response['CustomLabels'])
 
-#fuction to stop the model, may call this after a certain number of images are used, will be minor changes, currently not integrated
+#fuction to stop the model, currently this function is called after 10 images are analyzed
 #Copyright 2020 Amazon.com, Inc. or its affiliates. All Rights Reserved.
 #PDX-License-Identifier: MIT-0 (For details, see https://github.com/awsdocs/amazon-rekognition-custom-labels-developer-guide/blob/master/LICENSE-SAMPLECODE.)
 def stop_model(model_arn):
 
-    print('Stopping model:' + model_arn)
-
     #Stop the model
     try:
-        response=client.stop_project_version(ProjectVersionArn=model_arn)
-        status=response['Status']
-        print ('Status: ' + status)
+        response = client.stop_project_version(ProjectVersionArn=model_arn)
     except Exception as e:  
         print(e)  
 
-    print('Done...')
 
 
 #function called from main to detect motion
@@ -116,9 +102,7 @@ def detMotion():
     #sensor waits for motion
     sensor.wait_for_motion()
     
-    
-    #if sensor detects motion
-    #take picture
+    #if sensor detects motion take picture
     camera.capture_file('/tmp/picture.jpg')
     
     #upload the photo to the s3 bucket
@@ -128,20 +112,44 @@ def detMotion():
     photo = 'picture.jpg'
     bucket = 'custom-labels-console-us-east-2-267fac5ce3'
     
-    #call the display image function
+    #call the get labels function
     label = show_custom_labels(model, bucket, photo, min_confidence)
     
-    print(label)
+    #call analyze label function to get a string back
+    response = analyzeLabel(str(label))
     
-    #sleep timer so sensor can reset itself
+    #timer to let sensor reset
     time.sleep(10)
+    
+    #print string for test purposes
+    print(response)
         
     #increment count variable
     count += 1
         
-    if count == 30:
+    #if more than 30 photos, stop model
+    if count == 10:
         stop_model(model_arn)
-    
+        
+#function to analyze the label
+def analyzeLabel(label):
+
+    #analyze label and extract string
+    if 'metal' in label:
+        response = 'aluminum'
+    elif 'cardboard' in label:
+        response = 'cardboard'
+    elif 'paper' in label:
+        response = 'paper'
+    elif 'glass' in label:
+        response = 'glass'
+    elif 'plastic' in label:
+        response = 'plastic'
+    else:
+        response = 'not recyclable'
+            
+    #return string
+    return response
 
     
     
