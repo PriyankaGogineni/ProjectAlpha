@@ -1,0 +1,23 @@
+{
+  "runtimeTarget": {
+    "name": ".NETCoreApp,Version=v6.0",
+    "signature": ""
+  },
+  "compilationOptions": {},
+  "targets": {
+    ".NETCoreApp,Version=v6.0": {
+      "Trash Status web app/1.0.0": {
+        "runtime": {
+          "Trash Status web app.dll": {}
+        }
+      }
+    }
+  },
+  "libraries": {
+    "Trash Status web app/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    }
+  }
+}
