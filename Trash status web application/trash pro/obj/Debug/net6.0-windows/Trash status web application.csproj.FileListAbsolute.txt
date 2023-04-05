@@ -1,0 +1,51 @@
+C:\Users\haris\source\repos\trash pro\trash pro\bin\Debug\net6.0-windows\Trash status web application.exe
+C:\Users\haris\source\repos\trash pro\trash pro\bin\Debug\net6.0-windows\Trash status web application.deps.json
+C:\Users\haris\source\repos\trash pro\trash pro\bin\Debug\net6.0-windows\Trash status web application.runtimeconfig.json
+C:\Users\haris\source\repos\trash pro\trash pro\bin\Debug\net6.0-windows\Trash status web application.dll
+C:\Users\haris\source\repos\trash pro\trash pro\bin\Debug\net6.0-windows\Trash status web application.pdb
+C:\Users\haris\source\repos\trash pro\trash pro\obj\Debug\net6.0-windows\Trash status web application.csproj.AssemblyReference.cache
+C:\Users\haris\source\repos\trash pro\trash pro\obj\Debug\net6.0-windows\trash_pro.Form1.resources
+C:\Users\haris\source\repos\trash pro\trash pro\obj\Debug\net6.0-windows\Trash status web application.csproj.GenerateResource.cache
+C:\Users\haris\source\repos\trash pro\trash pro\obj\Debug\net6.0-windows\Trash status web application.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\haris\source\repos\trash pro\trash pro\obj\Debug\net6.0-windows\Trash status web application.AssemblyInfoInputs.cache
+C:\Users\haris\source\repos\trash pro\trash pro\obj\Debug\net6.0-windows\Trash status web application.AssemblyInfo.cs
+C:\Users\haris\source\repos\trash pro\trash pro\obj\Debug\net6.0-windows\Trash status web application.csproj.CoreCompileInputs.cache
+C:\Users\haris\source\repos\trash pro\trash pro\obj\Debug\net6.0-windows\Trash status web application.dll
+C:\Users\haris\source\repos\trash pro\trash pro\obj\Debug\net6.0-windows\refint\Trash status web application.dll
+C:\Users\haris\source\repos\trash pro\trash pro\obj\Debug\net6.0-windows\Trash status web application.pdb
+C:\Users\haris\source\repos\trash pro\trash pro\obj\Debug\net6.0-windows\Trash status web application.genruntimeconfig.cache
+C:\Users\haris\source\repos\trash pro\trash pro\obj\Debug\net6.0-windows\ref\Trash status web application.dll
+C:\Users\haris\source\repos\Trash status web application\Trash Status web application\bin\Debug\net6.0-windows\Trash status web application.exe
+C:\Users\haris\source\repos\Trash status web application\Trash Status web application\bin\Debug\net6.0-windows\Trash status web application.deps.json
+C:\Users\haris\source\repos\Trash status web application\Trash Status web application\bin\Debug\net6.0-windows\Trash status web application.runtimeconfig.json
+C:\Users\haris\source\repos\Trash status web application\Trash Status web application\bin\Debug\net6.0-windows\Trash status web application.dll
+C:\Users\haris\source\repos\Trash status web application\Trash Status web application\bin\Debug\net6.0-windows\Trash status web application.pdb
+C:\Users\haris\source\repos\Trash status web application\Trash Status web application\obj\Debug\net6.0-windows\Trash status web application.csproj.AssemblyReference.cache
+C:\Users\haris\source\repos\Trash status web application\Trash Status web application\obj\Debug\net6.0-windows\trash_pro.Form1.resources
+C:\Users\haris\source\repos\Trash status web application\Trash Status web application\obj\Debug\net6.0-windows\Trash status web application.csproj.GenerateResource.cache
+C:\Users\haris\source\repos\Trash status web application\Trash Status web application\obj\Debug\net6.0-windows\Trash status web application.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\haris\source\repos\Trash status web application\Trash Status web application\obj\Debug\net6.0-windows\Trash status web application.AssemblyInfoInputs.cache
+C:\Users\haris\source\repos\Trash status web application\Trash Status web application\obj\Debug\net6.0-windows\Trash status web application.AssemblyInfo.cs
+C:\Users\haris\source\repos\Trash status web application\Trash Status web application\obj\Debug\net6.0-windows\Trash status web application.csproj.CoreCompileInputs.cache
+C:\Users\haris\source\repos\Trash status web application\Trash Status web application\obj\Debug\net6.0-windows\Trash status web application.dll
+C:\Users\haris\source\repos\Trash status web application\Trash Status web application\obj\Debug\net6.0-windows\refint\Trash status web application.dll
+C:\Users\haris\source\repos\Trash status web application\Trash Status web application\obj\Debug\net6.0-windows\Trash status web application.pdb
+C:\Users\haris\source\repos\Trash status web application\Trash Status web application\obj\Debug\net6.0-windows\Trash status web application.genruntimeconfig.cache
+C:\Users\haris\source\repos\Trash status web application\Trash Status web application\obj\Debug\net6.0-windows\ref\Trash status web application.dll
+C:\Users\haris\source\repos\Trash status web application\trash pro\bin\Debug\net6.0-windows\Trash status web application.exe
+C:\Users\haris\source\repos\Trash status web application\trash pro\bin\Debug\net6.0-windows\Trash status web application.deps.json
+C:\Users\haris\source\repos\Trash status web application\trash pro\bin\Debug\net6.0-windows\Trash status web application.runtimeconfig.json
+C:\Users\haris\source\repos\Trash status web application\trash pro\bin\Debug\net6.0-windows\Trash status web application.dll
+C:\Users\haris\source\repos\Trash status web application\trash pro\bin\Debug\net6.0-windows\Trash status web application.pdb
+C:\Users\haris\source\repos\Trash status web application\trash pro\obj\Debug\net6.0-windows\Trash status web application.csproj.AssemblyReference.cache
+C:\Users\haris\source\repos\Trash status web application\trash pro\obj\Debug\net6.0-windows\trash_pro.Form1.resources
+C:\Users\haris\source\repos\Trash status web application\trash pro\obj\Debug\net6.0-windows\Trash status web application.csproj.GenerateResource.cache
+C:\Users\haris\source\repos\Trash status web application\trash pro\obj\Debug\net6.0-windows\Trash status web application.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\haris\source\repos\Trash status web application\trash pro\obj\Debug\net6.0-windows\Trash status web application.AssemblyInfoInputs.cache
+C:\Users\haris\source\repos\Trash status web application\trash pro\obj\Debug\net6.0-windows\Trash status web application.AssemblyInfo.cs
+C:\Users\haris\source\repos\Trash status web application\trash pro\obj\Debug\net6.0-windows\Trash status web application.csproj.CoreCompileInputs.cache
+C:\Users\haris\source\repos\Trash status web application\trash pro\obj\Debug\net6.0-windows\Trash status web application.dll
+C:\Users\haris\source\repos\Trash status web application\trash pro\obj\Debug\net6.0-windows\refint\Trash status web application.dll
+C:\Users\haris\source\repos\Trash status web application\trash pro\obj\Debug\net6.0-windows\Trash status web application.pdb
+C:\Users\haris\source\repos\Trash status web application\trash pro\obj\Debug\net6.0-windows\Trash status web application.genruntimeconfig.cache
+C:\Users\haris\source\repos\Trash status web application\trash pro\obj\Debug\net6.0-windows\ref\Trash status web application.dll
