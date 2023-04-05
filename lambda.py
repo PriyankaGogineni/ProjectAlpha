@@ -4,10 +4,7 @@ dynamodb = boto3.resource('dynamodb')
 table = dynamodb.Table('greencount')
 def lambda_handler(event, context):
     
-    
-    # #aws keys
-    # aws_access_key_id="AKIASG35BNH4DMWXXGG6"
-    # aws_secret_access_key="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"
+
     
     #define rekognition client
     client = boto3.client('rekognition', region_name='us-east-2')
