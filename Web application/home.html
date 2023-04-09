@@ -1,0 +1,239 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Green Count</title>
+    <style>
+      /* CSS styles */
+      body {
+        margin: 0;
+        padding: 0;
+        font-family: Arial, sans-serif;
+        background-color: #f1f1f1;
+      }
+      #header {
+        background-color: #3FE924;
+        color: #fff;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 20px;
+      }
+      #logo {
+        font-size: 24px;
+        font-weight: bold;
+        text-transform: uppercase;
+        letter-spacing: 2px;
+      }
+      #nav {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+      }
+      #nav ul {
+        list-style: none;
+        margin: 0;
+        padding: 0;
+        display: flex;
+      }
+      #nav li {
+        margin: 0 10px;
+      }
+      #nav a {
+        color: #333;
+        text-decoration: none;
+        padding: 10px;
+        border-radius: 5px;
+        transition: all 0.3s ease;
+      }
+      #nav a:hover {
+        background-color: #fff;
+        color: #333;
+      }
+      h1 {
+        font-size: 36px;
+        color: #333;
+        text-align: center;
+        margin-top: 50px;
+      }
+      p {
+        font-size: 18px;
+        color: #666;
+        text-align: center;
+        margin: 20px;
+      }
+      button {
+        background-color: #333;
+        color: #fff;
+        padding: 10px 20px;
+        border: none;
+        border-radius: 5px;
+        font-size: 18px;
+        cursor: pointer;
+        transition: all 0.3s ease;
+      }
+      button:hover {
+        background-color: #fff;
+        color: #333;
+      }
+      table {
+        border-collapse: collapse;
+        margin: 20px auto;
+        background-color: #fff;
+        box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.2);
+      }
+      th,
+      td {
+        padding: 10px;
+        border: 1px solid #ccc;
+        text-align: center;
+      }
+      th {
+        background-color: #333;
+        color: #fff;
+      }
+    </style>
+    </head>
+        <body>
+            <div id="header">
+                <div id="logo">Green Count</div>
+                <nav id="nav">
+                <ul>
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#">About</a></li>
+                    <li><a href="#">Contact</a></li>
+                </ul>
+                </nav>
+            </div>
+            <h2>Today's Data</h2>
+            <table>
+              <thead>
+                <tr>
+                  <th>Attributes</th>
+                  <th>Count</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td>Paper</td>
+                  <td id="today-paper"></td>
+                </tr>
+                <tr>
+                  <td>Plastic</td>
+                  <td id="today-plastic"></td>
+                </tr>
+                <tr>
+                  <td>Glass</td>
+                  <td id="today-glass"></td>
+                </tr>
+                <tr>
+                  <td>Metal</td>
+                  <td id="today.metal"></td>
+                </tr>
+                <tr>
+                  <td>Other</td>
+                  <td id="today.other"></td>
+                </tr>
+              </tbody>
+            </table>
+            
+            <h2>Yesterday's Data</h2>
+            <table>
+              <thead>
+                <tr>
+                  <th>Attributes</th>
+                  <th>Count</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td>Paper</td>
+                  <td id="yesterday-paper"></td>
+                </tr>
+                <tr>
+                  <td>Plastic</td>
+                  <td id="yesterday-plastic"></td>
+                </tr>
+                <tr>
+                  <td>Glass</td>
+                  <td id="yesterday-glass"></td>
+                </tr>
+                <tr>
+                  <td>Metal</td>
+                  <td id="yesterday-metal"></td>
+                </tr>
+                <tr>
+                  <td>Other</td>
+                  <td id="yesterday-other"></td>
+                </tr>
+              </tbody>
+            </table>
+            
+            <h2>Last Week's Data</h2>
+            <table>
+              <thead>
+                <tr>
+                  <th>Attributes</th>
+                  <th>Count</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td>Paper</td>
+                  <td id="lastweek-paper"></td>
+                </tr>
+                <tr>
+                  <td>Plastic</td>
+                  <td id="lastweek-plastic"></td>
+                </tr>
+                <tr>
+                  <td>Glass</td>
+                  <td id="lastweek-glass"></td>
+                </tr>
+                <tr>
+                  <td>Metal</td>
+                  <td id="lastweek-metal"></td>
+                </tr>
+                <tr>
+                  <td>Other</td>
+                  <td id="lastweek-other"></td>
+                </tr>
+              </tbody>
+            </table> 
+            <script>
+                // Fetch data from the API
+                    async function fetchData() {
+                    const apiUrl = 'https://99gixr5c5g.execute-api.us-east-2.amazonaws.com/objects/greencount_get_api';
+                    const response = await fetch(apiUrl);
+                    const data = await response.json();
+                  
+                    // Update today table
+                    document.getElementById('today-paper').innerHTML = parseInt(data.today.paper);
+                    document.getElementById('today-plastic').innerHTML = parseInt(data.today.plastic);
+                    document.getElementById('today-glass').innerHTML = parseInt(data.today.glass);
+                    document.getElementById('today-metal').innerHTML = parseInt(data.today.metal);
+                    document.getElementById('today-other').innerHTML = parseInt(data.today.other);
+                  
+                    // Update yesterday table
+                    document.getElementById('yesterday-paper').innerHTML = parseInt(data.yesterday.paper);
+                    document.getElementById('yesterday-plastic').innerHTML = parseInt(data.yesterday.plastic);
+                    document.getElementById('yesterday-glass').innerHTML = parseInt(data.yesterday.glass);
+                    document.getElementById('yesterday-metal').innerHTML = parseInt(data.yesterday.metal);
+                    document.getElementById('yesterday-other').innerHTML = parseInt(data.yesterday.other);
+                  
+                    // Update last week table
+                    document.getElementById('lastweek-paper').innerHTML = parseInt(data.lastweek.paper);
+                    document.getElementById('lastweek-plastic').innerHTML = parseInt(data.lastweek.plastic);
+                    document.getElementById('lastweek-glass').innerHTML = parseInt(data.lastweek.glass);
+                    document.getElementById('lastweek-metal').innerHTML = parseInt(data.lastweek.metal);
+                    document.getElementById('lastweek-other').innerHTML = parseInt(data.lastweek.other);
+                  }
+                  
+                  // Call the fetchData() function to update the tables
+                  fetchData();
+                    
+            </script>          
+            <footer>
+                <p>&copy; 2023</p>
+            </footer>
+        </body>
+</html>
